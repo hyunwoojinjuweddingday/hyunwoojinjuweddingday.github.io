@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hyunwoojinjuweddingday.github.io/static/css/main.ce0b4d31.css",
-    "main.js": "/hyunwoojinjuweddingday.github.io/static/js/main.7fbe5cba.js",
+    "main.js": "/hyunwoojinjuweddingday.github.io/static/js/main.87f2d8f6.js",
     "static/js/787.67d6382a.chunk.js": "/hyunwoojinjuweddingday.github.io/static/js/787.67d6382a.chunk.js",
     "static/media/gif.GIF": "/hyunwoojinjuweddingday.github.io/static/media/gif.cfb9a21432aa2c0c0e3d.GIF",
     "static/media/gif2.gif": "/hyunwoojinjuweddingday.github.io/static/media/gif2.725a9584a98cb879e61b.gif",
@@ -21,11 +21,11 @@
     "static/media/slick.woff": "/hyunwoojinjuweddingday.github.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/hyunwoojinjuweddingday.github.io/index.html",
     "main.ce0b4d31.css.map": "/hyunwoojinjuweddingday.github.io/static/css/main.ce0b4d31.css.map",
-    "main.7fbe5cba.js.map": "/hyunwoojinjuweddingday.github.io/static/js/main.7fbe5cba.js.map",
+    "main.87f2d8f6.js.map": "/hyunwoojinjuweddingday.github.io/static/js/main.87f2d8f6.js.map",
     "787.67d6382a.chunk.js.map": "/hyunwoojinjuweddingday.github.io/static/js/787.67d6382a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce0b4d31.css",
-    "static/js/main.7fbe5cba.js"
+    "static/js/main.87f2d8f6.js"
   ]
 }
