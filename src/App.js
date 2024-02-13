@@ -169,7 +169,7 @@ const Img = styled.img`
 
 const MainText = styled.div`
 margin-top: 100px;
-margin-bottom: 50px;
+margin-bottom: 70px;
 line-height: 35px;
 font-weight: 300;
 p{
@@ -194,7 +194,7 @@ div{
 `
 
 const Data = styled.div`
-margin-top: 70px;
+margin-top: 90px;
 div{
   margin: 10px;
 }
@@ -202,7 +202,7 @@ div{
 
 const Map = styled.div`
 height: 100%;
-margin-top: 70px;
+margin-top: 90px;
 display: flex;
 flex-direction: column;
 align-items: center;

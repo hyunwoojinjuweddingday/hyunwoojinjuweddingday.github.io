@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import icon from './Img/icon/free-icon-copy-content-60990.png';
+import React, { useState } from 'react';
 
 
 const handleCopyClipBoard = async (text) => {
