@@ -17,7 +17,7 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
-import ModalH from './ModalH.jsx';
+import some from './Img/some.jpg';
 
 
 
@@ -120,7 +120,7 @@ const settings = {
         <img src={s04}/>
         </div>
         <div>
-        <img src={s05}/>
+        <img src={some}/>
         </div>
       </Slider>
       </ImgSlider>
