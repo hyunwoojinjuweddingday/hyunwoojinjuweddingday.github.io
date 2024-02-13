@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import './App.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -17,6 +17,7 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
+import ModalH from './ModalH.jsx';
 
 
 
@@ -49,7 +50,23 @@ const settings = {
     <Box className='App'>
       <Top>
         <MainImg src={imgcenter} loading="lazy"/>
-        <MainText>현우 진주 우리 결혼합니다.</MainText>
+        <MainText>
+          <p>인생에서 가장 황홀한<br/>
+          순간과 기억이<br/>
+          하나의 찬란한 빛의 존재가 되어,<br/>
+          영원한 사랑을 약속합니다.<br/>
+          <br/>
+          함께 할 앞 날의<br/>
+          가슴 벅찬 감동과<br/>
+          평생이란 아름다움을 만나기 위해 <br/>
+          긴 여행을 시작하려고 합니다.<br/>
+          <br/>
+          저희의 시작에 <br/>
+          귀한 발걸음 하시어<br/>
+          축복해주시면<br/>
+          감사하겠습니다. <br/>
+          </p>
+          </MainText>
         <InfoBox>
           <Info>
             <div>이용섭 • 이복성의 아들</div>
@@ -113,6 +130,7 @@ const settings = {
 }
 
 const Box = styled.div`
+  font-family: 'BookkMyungjo';
 margin: 0;
 display: flex;
 flex-direction: column;
@@ -130,7 +148,6 @@ const Top = styled.div`
   font-family: 'BookkMyungjo';
 `
 const Bottom = styled.div`
-  font-family: 'nanumMyeongjo';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,11 +164,12 @@ const Img = styled.img`
   width: 80%;
   height: 70%;
   margin-top: 85px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 `
 
 const MainText = styled.div`
-margin-top: 50px;
+margin-top: 100px;
+margin-bottom: 50px;
 line-height: 35px;
 font-weight: 300;
 p{
@@ -184,7 +202,7 @@ div{
 
 const Map = styled.div`
 height: 100%;
-margin-top: 30px;
+margin-top: 70px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -203,14 +221,15 @@ img{
 const Num = styled.div`
 max-width: 100%;
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: space-around;
-margin-top: 15px;
-margin-bottom: 25px;
+margin-top: 10px;
 span{
   display: flex;
   align-items: center;
   margin-right: 20px;
+  margin-top: 10px;
   img{
   width: 13px;
   height: 12px;
@@ -221,7 +240,8 @@ span{
 const ImgSlider = styled.div`
 width: 100%;
 height: 300px;
-margin-top: 50px;
+margin-top: 150px;
+margin-bottom: 50px;
   .slick-slider {
     height: 100%;
     touch-action: none;
