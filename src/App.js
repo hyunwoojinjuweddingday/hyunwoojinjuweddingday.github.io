@@ -19,8 +19,8 @@ import img07 from './Img/mainImg.webp';
 import img08 from './Img/img08.webp';
 import img09 from './Img/img09.webp';
 import img10 from './Img/img10.webp';
-
-
+import gif01 from './Img/gif01.gif';
+import gif02 from './Img/gif02.gif';
 
 
 
@@ -77,6 +77,7 @@ const settings = {
           <div>오전 11시</div>
           <div>아현정</div>
         </Data>
+        <Img className='gif'src={gif01} loading='lazy'/>
       </Top>
       <Bottom>
       <Map>
@@ -142,7 +143,7 @@ const settings = {
         </div>
       </Slider>
       </ImgSlider>
-      <Img className='gif'src={gif2}/>
+      <Img className='gif'src={gif02} loading='lazy'/>
     </Box>
   );
 }
