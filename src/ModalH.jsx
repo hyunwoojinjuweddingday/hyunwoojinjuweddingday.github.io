@@ -64,7 +64,6 @@ const ModalH = () => {
 export default ModalH;
 
 const Box = styled.div`
-
 `
 const Container = styled.div`
     position: fixed;

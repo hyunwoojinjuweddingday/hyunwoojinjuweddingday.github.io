@@ -11,7 +11,7 @@ import ModalMale from './ModalH.jsx'
 import gif from './Img/gif.GIF';
 import gif2 from './Img/gif2.gif';
 import imgcenter from './Img/img_center.jpg';
-import imgmain from './Img/img_main.jpg';
+import imgmain from './Img/thumbnail.webp';
 import s01 from './Img/s01.jpg';
 import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
@@ -49,7 +49,7 @@ const settings = {
   return (
     <Box className='App'>
       <Top>
-        <MainImg src={imgcenter} loading="lazy"/>
+        <MainImg src={imgmain} loading="lazy"/>
         <MainText>
           <p>모든 것이 새로워지는 봄날,<br/>
           저희 두 사람이 새 출발의 첫 걸음을 내딛습니다.<br/>
