@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import icon from './Img/icon/free-icon-copy-content-60990.png';
 import React, { useState } from 'react';
+import close from '../src/Img/close.png'
 
 
 const handleCopyClipBoard = async (text) => {
@@ -12,47 +13,90 @@ const handleCopyClipBoard = async (text) => {
 	}
 };
 
-const Modal_Jinju = ( female ) => {
+const ModalH = () => {
+  const [male, setMale] = useState(true)
 
+  const onClickbtn = () => {
+    setMale(male=>!male);
+  }
 
     return (
-    <ModalBox className='infoBox'> 
-      {female ? (
+      <>
+      {male ? (
+        <Box className='infoBox'>
+        <ModalBox>
+        <div className='title'>
+        <h4>신부측 마음 전하실 곳</h4>
+        <img src={close} onClick={onClickbtn}/>
+        </div>
         <Data> 
-            <Info>
-              <p></p>
-              <p>신한 110-463-549357</p>
-              <p>서진주</p>
-              <p onClick={()=>handleCopyClipBoard('신한 110-463-549357 서진주')}><img src={icon} alt='icon'/> </p>
-            </Info>
-            <Info>
-              <p>父</p>
-              <p>농협 823-12-139643</p>
-              <p>서병환</p>
-              <p onClick={()=>handleCopyClipBoard('농협 823-12-139643 서병환')}><img src={icon} alt='icon'/> </p>
-            </Info>
-            <Info>
-              <p>母</p>
-              <p>농협 302-0480-5680-01</p>
-              <p>정미영</p>
-              <p onClick={()=>handleCopyClipBoard('농협 302-0480-5680-01 정미영')}><img src={icon} alt='icon'/> </p>
-            </Info>
-        </Data>): null}
-      </ModalBox>
-    )
-        
+          <Info>
+            <p>서진주</p>
+            <div>
+            <p>신한 110-463-549357</p>
+            <p onClick={()=>handleCopyClipBoard('신한 110-463-549357 서진주')}><img src={icon} alt='icon'/> </p>
+            </div>
+          </Info>
+          <Info>
+            <p>父 서병환</p>
+            <div>
+            <p>농협 823-12-139643</p>
+            <p onClick={()=>handleCopyClipBoard('농협 823-12-139643 서병환')}><img src={icon} alt='icon'/> </p>
+            </div>
+          </Info>
+          <Info>
+            <p>母 정미영</p>
+            <div>
+            <p>농협 302-0480-5680-01</p>
+            <p onClick={()=>handleCopyClipBoard('농협 302-0480-5680-01 정미영')}><img src={icon} alt='icon'/> </p>
+            </div>
+          </Info>
+        </Data>
+        </ModalBox>
+        </Box>  ): null}
+      </>
+    ) 
 }
 
-export default Modal_Jinju;
+export default ModalH;
+
+const Box = styled.div`
+  position: fixed;
+  top:0; left: 0; bottom: 0; right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35); 
+`
 
 const ModalBox = styled.div`
-border: 4px solid  #311D00;;
-width: 370px;
-height: 180px;
-border-radius: 15px;
+position: fixed;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+width: 300px;
+height: 350px;
+border-radius: 25px;
 margin-bottom: 30px;
+background-color: #f4f4f3;
+padding: 0 15px;
+z-index: 9999;
+.title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  img{
+    width: 15px;
+    height: 15px;
+  }
+}
 `
- 
+
 const Data = styled.div`
 display: flex;
 flex-direction: column;
@@ -62,25 +106,38 @@ text-align: left;
 `
 
 const Info = styled.div`
-width: 330px;
-padding: 0 10px;
-margin-top: 5px;
+width: 100%;
 display: flex;
-align-items: center;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
 text-align: left;
+p{
+margin: 0;
+}
+div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #311D00 solid;
+  margin-bottom: 20px;
+}
 img{
   width: 15px;
   height: 15px;
-  margin: 0 10px
+  padding-top: 8px;
+  margin-left: 5px;
 }
-p:nth-child(1){
-  margin-right: auto;
-  width: 30px;
-}
-p:nth-child(2){
-  margin-right: auto;
-}
-p:nth-child(3){
-  margin-left: auto;
-}
+`
+
+const Btn = styled.button`
+  width: 50%;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 30px;
+  border: #311D00 solid 2px;
+  color: #311D00;
+  background-color: #fff;
+  font-family: 'BookkMyungjo';
 `

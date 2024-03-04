@@ -17,7 +17,7 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
-import some from './Img/some.jpg';
+
 
 
 
@@ -69,12 +69,12 @@ const settings = {
           </MainText>
         <InfoBox>
           <Info>
-            <div>이용섭 • 이복성의 아들</div>
-            <div style={{fontWeight:'700'}}>이현우</div>
+            <div>이용섭 • 이복성의 장남</div>
+            <div style={{fontWeight:'700'}}>현우</div>
           </Info>
           <Info>
-            <div>서병환 • 정미영의 딸</div>
-            <div style={{fontWeight:'bold'}}>서진주</div>
+            <div>서병환 • 정미영의 차녀</div>
+            <div style={{fontWeight:'bold'}}>진주</div>
           </Info>
         </InfoBox>
         <Data>
@@ -89,20 +89,20 @@ const settings = {
         <p style={{fontSize:'12px', color:'gray'}}>이미지 클릭시 네이버 지도로 연결됩니다.</p>
         <p className='box'>
           <p>예식장 주소</p>
-          <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> (황금동 660)</p>
+          <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> <br/>(황금동 660)</p>
           <p>주차안내</p>
           <p>어린이회관 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
         </p>
       </Map>
       <div>마음 전해주실 곳 </div>
       <Num>
-      <span onClick={onClcikMale}> <img src={icon}/> 신랑측 </span>
-      <span onClick={onClcikFemale}> <img src={icon}/> 신부측 </span>
+      <span onClick={onClcikMale}> <img src={icon}  onClick={onClcikMale}/> 신랑측 </span>
+      <span onClick={onClcikFemale}> <img src={icon} onClick={onClcikFemale}/> 신부측 </span>
       </Num>
       {male ? <ModalMale setMale={setMale} male={male} />:null}
       {female ? <Modal setFemale={setFemale} female={female} />:null}
       </Bottom>
-      <ImgSlider>
+      <ImgSlider style={{zIndex:'1'}}>
       <Slider {...settings}>
       <div>
         <img src={s01}/>
@@ -120,7 +120,7 @@ const settings = {
         <img src={s04}/>
         </div>
         <div>
-        <img src={some}/>
+        <img src={s05}/>
         </div>
       </Slider>
       </ImgSlider>
@@ -130,7 +130,8 @@ const settings = {
 }
 
 const Box = styled.div`
-  font-family: 'BookkMyungjo';
+position: relative;
+font-family: 'BookkMyungjo';
 margin: 0;
 display: flex;
 flex-direction: column;
@@ -141,7 +142,13 @@ max-width: 100%;
 height: auto;
 color: #311D00;
 .infoBox{
+  position: absolute;
   max-width: 90%;
+  z-index: 9999;
+}
+.slick-slide img{
+  position: absolute;
+  z-index: 1;
 }
 `
 const Top = styled.div`
@@ -153,7 +160,7 @@ const Bottom = styled.div`
   align-items: center;
 `
 const MainImg = styled.img `
- touch-action: none;
+  touch-action: none;
   max-width: 100%;
   height: auto;
 
@@ -164,7 +171,7 @@ const Img = styled.img`
   width: 80%;
   height: 70%;
   margin-top: 85px;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 `
 
 const MainText = styled.div`
@@ -216,6 +223,7 @@ img{
 }
 .box{
   margin-top: 20px;
+  line-height: 1.5;
 }
 `
 const Num = styled.div`
@@ -238,22 +246,36 @@ span{
 `
 
 const ImgSlider = styled.div`
+
 width: 100%;
-height: 300px;
+height: 330px;
 margin-top: 150px;
 margin-bottom: 50px;
+
+
   .slick-slider {
     height: 100%;
     touch-action: none;
     margin: 0;
   }
+  .slick-slider .slick-list {
+
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
   .slick-slide img {
+    position: relative;
   object-fit: cover;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 0;
+  z-index:9;
 }
+.slick-tranck
 
   .SlickArrow {
     display: inline-block;

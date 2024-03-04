@@ -17,15 +17,14 @@ const ModalH = () => {
   const [male, setMale] = useState(true)
 
   const onClickbtn = () => {
-    setMale(false);
+    setMale(male=>!male);
   }
 
-console.log(male)
     return (
       <>
       {male ? (
-        <Box>
-        <ModalBox className='infoBox'>
+        <Box className='infoBox'>
+        <ModalBox>
         <div className='title'>
         <h4>신랑측 마음 전하실 곳</h4>
         <img src={close} onClick={onClickbtn}/>
@@ -63,20 +62,10 @@ export default ModalH;
 
 const Box = styled.div`
   position: fixed;
+  top:0; left: 0; bottom: 0; right: 0;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.35); 
-  &.blur::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-  }
-
 `
 
 const ModalBox = styled.div`
@@ -90,11 +79,11 @@ left: 50%;
 transform: translate(-50%, -50%);
 width: 300px;
 height: 350px;
-border-radius: 15px;
+border-radius: 25px;
 margin-bottom: 30px;
-background-color: #eee8d8;
-padding: 0 10px;
-z-index: 200;
+background-color: 	#f4f4f3;
+padding: 0 15px;
+z-index: 9999;
 .title{
   width: 100%;
   display: flex;
@@ -140,4 +129,15 @@ img{
   padding-top: 8px;
   margin-left: 5px;
 }
+`
+
+const Btn = styled.button`
+  width: 50%;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 30px;
+  border: #311D00 solid 2px;
+  color: #311D00;
+  background-color: #fff;
+  font-family: 'BookkMyungjo';
 `
