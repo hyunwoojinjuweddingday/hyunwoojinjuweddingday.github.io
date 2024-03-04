@@ -49,7 +49,7 @@ const settings = {
   return (
     <Box className='App'>
       <Top>
-        <MainImg src={imgmain} loading="lazy"/>
+        <MainImg src={imgcenter} loading="lazy"/>
         <MainText>
           <p>모든 것이 새로워지는 봄날,<br/>
           저희 두 사람이 새 출발의 첫 걸음을 내딛습니다.<br/>
