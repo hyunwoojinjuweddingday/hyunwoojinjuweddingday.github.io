@@ -17,6 +17,18 @@ import s02 from './Img/s02.jpg';
 import s03 from './Img/s03.jpg';
 import s04 from './Img/s04.jpg';
 import s05 from './Img/s05.jpg';
+import img01 from './Img/img01.webp';
+import img02 from './Img/img02.webp';
+import img03 from './Img/img03.webp';
+import img04 from './Img/img04.webp';
+import img05 from './Img/img05.webp';
+import img06 from './Img/img06.webp';
+import img07 from './Img/mainImg.webp';
+import img08 from './Img/img08.webp';
+import img09 from './Img/img09.webp';
+import img10 from './Img/img10.webp';
+
+
 
 
 
@@ -49,7 +61,7 @@ const settings = {
   return (
     <Box className='App'>
       <Top>
-        <MainImg src={imgcenter} loading="lazy"/>
+        <MainImg src={img07} loading="lazy"/>
         <MainText>
           <p>모든 것이 새로워지는 봄날,<br/>
           저희 두 사람이 새 출발의 첫 걸음을 내딛습니다.<br/>
@@ -77,12 +89,12 @@ const settings = {
       <Bottom>
       <Map>
         <a href='https://naver.me/FmgVoXAc' target='_blank'><img src={mapImg}/></a>
-        <p style={{fontSize:'12px', color:'gray'}}>이미지 클릭시 네이버 지도로 연결됩니다.</p>
+        <p style={{fontSize:'0.8rem', color:'gray'}}>이미지 클릭시 네이버 지도로 연결됩니다.</p>
         <p className='box'>
           <p>예식장 주소</p>
           <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> <br/>(황금동 660)</p>
           <p>주차안내</p>
-          <p>어린이회관 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
+          <p>어린이세상 앞 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
           <br/>
           <p>전세버스</p>
           <p>
@@ -96,6 +108,7 @@ const settings = {
           출발 시간 전에 도착하셔서 탑승해 주시길 바랍니다. <br/>
           감사합니다.
           </p>
+          <br/>
         </p>
       </Map>
       <div>마음 전해주실 곳 </div>
@@ -109,22 +122,31 @@ const settings = {
       <ImgSlider style={{zIndex:'1'}}>
       <Slider {...settings}>
       <div>
-        <img src={s01}/>
+        <img src={img04} loading="lazy"/>
         </div>
         <div>
-        <img src={imgmain}/>
+        <img src={img05} loading="lazy"/>
         </div>
         <div>
-        <img src={s02}/>
+        <img src={img08} loading="lazy"/>
         </div>
         <div>
-        <img src={s03}/>
+        <img src={img02} loading="lazy"/>
         </div>
         <div>
-        <img src={s04}/>
+        <img src={img06} loading="lazy"/>
         </div>
         <div>
-        <img src={s05}/>
+        <img src={img01} loading="lazy"/>
+        </div>
+        <div>
+        <img src={img09} loading="lazy"/>
+        </div>
+        <div>
+        <img src={img10} loading="lazy"/>
+        </div>
+        <div>
+        <img src={img03} loading="lazy"/>
         </div>
       </Slider>
       </ImgSlider>
@@ -173,7 +195,7 @@ const Img = styled.img`
   height: auto;
   width: 80%;
   height: 70%;
-  margin-top: 85px;
+  margin-top: 350px;
   margin-bottom: 110px;
 `
 
@@ -252,7 +274,7 @@ const ImgSlider = styled.div`
 
 width: 100%;
 height: 330px;
-margin-top: 150px;
+margin-top: 100px;
 margin-bottom: 50px;
 
 
@@ -300,6 +322,7 @@ margin-bottom: 50px;
     text-align: center;
     padding: 0;
     list-style: none;
+    bottom: -330px;
     li {
       float: none;
       display: inline-block;
