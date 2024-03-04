@@ -8,15 +8,7 @@ import mapImg from './Img/map.png';
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
-import gif from './Img/gif.GIF';
 import gif2 from './Img/gif2.gif';
-import imgcenter from './Img/img_center.jpg';
-import imgmain from './Img/thumbnail.webp';
-import s01 from './Img/s01.jpg';
-import s02 from './Img/s02.jpg';
-import s03 from './Img/s03.jpg';
-import s04 from './Img/s04.jpg';
-import s05 from './Img/s05.jpg';
 import img01 from './Img/img01.webp';
 import img02 from './Img/img02.webp';
 import img03 from './Img/img03.webp';
@@ -195,7 +187,7 @@ const Img = styled.img`
   height: auto;
   width: 80%;
   height: 70%;
-  margin-top: 350px;
+  margin-top: 130px;
   margin-bottom: 110px;
 `
 
@@ -234,7 +226,7 @@ div{
 
 const Map = styled.div`
 height: 100%;
-margin-top: 90px;
+margin-top: 50px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -273,7 +265,7 @@ span{
 const ImgSlider = styled.div`
 
 width: 100%;
-height: 330px;
+height: 620px;
 margin-top: 100px;
 margin-bottom: 50px;
 
@@ -292,9 +284,9 @@ margin-bottom: 50px;
   transform: none !important;
 }
   .slick-slide img {
-    position: relative;
+  position: relative;
   object-fit: cover;
-  height: 100%;
+  height: 620px;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 0;
@@ -322,7 +314,7 @@ margin-bottom: 50px;
     text-align: center;
     padding: 0;
     list-style: none;
-    bottom: -330px;
+    bottom: -30px;
     li {
       float: none;
       display: inline-block;
