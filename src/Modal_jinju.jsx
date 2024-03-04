@@ -24,7 +24,8 @@ const ModalH = () => {
       <>
       {male ? (
         <Box className='infoBox'>
-        <ModalBox>
+          <Container>
+          <ModalBox>
         <div className='title'>
         <h4>신부측 마음 전하실 곳</h4>
         <img src={close} onClick={onClickbtn}/>
@@ -53,6 +54,7 @@ const ModalH = () => {
           </Info>
         </Data>
         </ModalBox>
+          </Container>
         </Box>  ): null}
       </>
     ) 
@@ -61,11 +63,15 @@ const ModalH = () => {
 export default ModalH;
 
 const Box = styled.div`
-  position: fixed;
+`
+
+const Container = styled.div`
+    position: fixed;
   top:0; left: 0; bottom: 0; right: 0;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   background: rgba(0, 0, 0, 0.35); 
+
 `
 
 const ModalBox = styled.div`
