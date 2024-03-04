@@ -51,20 +51,11 @@ const settings = {
       <Top>
         <MainImg src={imgcenter} loading="lazy"/>
         <MainText>
-          <p>인생에서 가장 황홀한<br/>
-          순간과 기억이<br/>
-          하나의 찬란한 빛의 존재가 되어,<br/>
-          영원한 사랑을 약속합니다.<br/>
-          <br/>
-          함께 할 앞 날의<br/>
-          가슴 벅찬 감동과<br/>
-          평생이란 아름다움을 만나기 위해 <br/>
-          긴 여행을 시작하려고 합니다.<br/>
-          <br/>
-          저희의 시작에 <br/>
-          귀한 발걸음 하시어<br/>
-          축복해주시면<br/>
-          감사하겠습니다. <br/>
+          <p>모든 것이 새로워지는 봄날,<br/>
+          저희 두 사람이 새 출발의 첫 걸음을 내딛습니다.<br/>
+          저희의 결혼을 축복해 주시고<br/>
+          따뜻한 마음으로 격려해 주신다면<br/>
+          큰 힘이 되겠습니다.<br/>
           </p>
           </MainText>
         <InfoBox>
@@ -143,7 +134,6 @@ height: auto;
 color: #311D00;
 .infoBox{
   position: absolute;
-  max-width: 90%;
   z-index: 9999;
 }
 .slick-slide img{
