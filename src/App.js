@@ -8,7 +8,6 @@ import mapImg from './Img/map.png';
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
-import gif2 from './Img/gif2.gif';
 import img01 from './Img/img01.webp';
 import img02 from './Img/img02.webp';
 import img03 from './Img/img03.webp';
@@ -19,8 +18,8 @@ import img07 from './Img/mainImg.webp';
 import img08 from './Img/img08.webp';
 import img09 from './Img/img09.webp';
 import img10 from './Img/img10.webp';
-import gif01 from './Img/gif01.avif';
-import gif02 from './Img/gif02.avif';
+import gif01 from './Img/gif01_.gif';
+import gif02 from './Img/gif02_.gif';
 
 
 
@@ -78,9 +77,8 @@ const settings = {
           <div>아현정</div>
         </Data>
         <picture>
-        <Img className='gif'src={gif01}/>
+        <Img className='gif'src={gif01} loading='lazy'/>
         </picture>
-
       </Top>
       <Bottom>
       <Map>
@@ -191,7 +189,7 @@ const MainImg = styled.img `
 const Img = styled.img`
   max-width: 80%;
   height: auto;
-  width: 80%;
+  width: 300px;
   height: 70%;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -199,7 +197,7 @@ const Img = styled.img`
 const Img2 = styled.img`
   max-width: 80%;
   height: auto;
-  width: 80%;
+  width: 350px;
   height: 70%;
   margin-top: 130px;
   margin-bottom: 110px;
