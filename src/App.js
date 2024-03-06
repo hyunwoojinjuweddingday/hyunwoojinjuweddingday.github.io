@@ -20,15 +20,15 @@ import img09 from './Img/img09.webp';
 import img10 from './Img/img10.webp';
 import gif01 from './Img/gif01_.gif';
 import gif02 from './Img/gif02_.gif';
-import img001 from './Img/img001_11zon.png';
-import img002 from './Img/img002_11zon.png';
-import img003 from './Img/img003_11zon.png';
-import img004 from './Img/img004_11zon.png';
-import img005 from './Img/img005_11zon.png';
-import img006 from './Img/img006_11zon.png';
-import img008 from './Img/img008_11zon.png';
-import img009 from './Img/img009_11zon.png';
-import img0010 from './Img/img0010_11zon.png';
+import img001 from './Img/p01.webp';
+import img002 from './Img/p02.webp';
+import img003 from './Img/p03.webp';
+import img004 from './Img/p04.webp';
+import img005 from './Img/p05.webp';
+import img006 from './Img/p06.webp';
+import img008 from './Img/p08.webp';
+import img009 from './Img/p09.webp';
+import img0010 from './Img/img10.webp';
 import main from './Img/main_11zon.png';
 
 
