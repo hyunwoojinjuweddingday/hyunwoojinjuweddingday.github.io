@@ -20,6 +20,16 @@ import img09 from './Img/img09.webp';
 import img10 from './Img/img10.webp';
 import gif01 from './Img/gif01_.gif';
 import gif02 from './Img/gif02_.gif';
+import img001 from './Img/img001_11zon.png';
+import img002 from './Img/img002_11zon.png';
+import img003 from './Img/img003_11zon.png';
+import img004 from './Img/img004_11zon.png';
+import img005 from './Img/img005_11zon.png';
+import img006 from './Img/img006_11zon.png';
+import img008 from './Img/img008_11zon.png';
+import img009 from './Img/img009_11zon.png';
+import img0010 from './Img/img0010_11zon.png';
+import main from './Img/main_11zon.png';
 
 
 
@@ -52,7 +62,7 @@ const settings = {
   return (
     <Box className='App'>
       <Top>
-        <MainImg src={img07} loading="lazy"/>
+        <MainImg src={main} loading="lazy"/>
         <MainText>
           <p>모든 것이 새로워지는 봄날,<br/>
           저희 두 사람이 새 출발의 첫 걸음을 내딛습니다.<br/>
@@ -116,31 +126,31 @@ const settings = {
       <ImgSlider style={{zIndex:'1'}}>
       <Slider {...settings}>
       <div>
-        <img src={img04} loading="lazy"/>
+        <img src={img004} loading="lazy"/>
         </div>
         <div>
-        <img src={img05} loading="lazy"/>
+        <img src={img005} loading="lazy"/>
         </div>
         <div>
-        <img src={img08} loading="lazy"/>
+        <img src={img008} loading="lazy"/>
         </div>
         <div>
-        <img src={img02} loading="lazy"/>
+        <img src={img002} loading="lazy"/>
         </div>
         <div>
-        <img src={img06} loading="lazy"/>
+        <img src={img006} loading="lazy"/>
         </div>
         <div>
-        <img src={img01} loading="lazy"/>
+        <img src={img001} loading="lazy"/>
         </div>
         <div>
-        <img src={img09} loading="lazy"/>
+        <img src={img009} loading="lazy"/>
         </div>
         <div>
-        <img src={img10} loading="lazy"/>
+        <img src={img0010} loading="lazy"/>
         </div>
         <div>
-        <img src={img03} loading="lazy"/>
+        <img src={img003} loading="lazy"/>
         </div>
       </Slider>
       </ImgSlider>
