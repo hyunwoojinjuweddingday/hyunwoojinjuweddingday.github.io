@@ -261,7 +261,7 @@ img{
   height: 80%;
 }
 .box{
-  margin-top: 20px;
+  margin-top: 45px;
   line-height: 1.5;
 }
 `
