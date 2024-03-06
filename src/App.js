@@ -8,16 +8,7 @@ import mapImg from './Img/map.png';
 import icon from '../src/Img/icon/free-icon-send-3945563.png'
 import Modal from './Modal_jinju.jsx';
 import ModalMale from './ModalH.jsx'
-import img01 from './Img/img01.webp';
-import img02 from './Img/img02.webp';
-import img03 from './Img/img03.webp';
-import img04 from './Img/img04.webp';
-import img05 from './Img/img05.webp';
-import img06 from './Img/img06.webp';
-import img07 from './Img/mainImg.webp';
-import img08 from './Img/img08.webp';
-import img09 from './Img/img09.webp';
-import img10 from './Img/img10.webp';
+import img01 from './Img/img001.png';
 import gif01 from './Img/gif01_.gif';
 import gif02 from './Img/gif02_.gif';
 import img001 from './Img/p01.webp';
@@ -126,7 +117,7 @@ const settings = {
       <ImgSlider style={{zIndex:'1'}}>
       <Slider {...settings}>
       <div>
-        <img src={img004} loading="lazy"/>
+        <img src={img01} loading="lazy"/>
         </div>
         <div>
         <img src={img005} loading="lazy"/>
