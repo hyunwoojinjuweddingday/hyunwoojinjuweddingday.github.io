@@ -14,12 +14,11 @@ import gif02 from './Img/gif02_.gif';
 import img001 from './Img/p01.webp';
 import img002 from './Img/p02.webp';
 import img003 from './Img/p03.webp';
-import img004 from './Img/p04.webp';
 import img005 from './Img/p05.webp';
 import img006 from './Img/p06.webp';
 import img008 from './Img/p08.webp';
-import img009 from './Img/p09.webp';
-import img0010 from './Img/img10.webp';
+import img009 from './Img/img009_11zon.png';
+import img0010 from './Img/img0010_11zon.png';
 import main from './Img/main_11zon.png';
 
 
@@ -90,20 +89,6 @@ const settings = {
           <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> <br/>(황금동 660)</p>
           <p>주차안내</p>
           <p>어린이세상 앞 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
-          {/* <br/>
-          <p>전세버스</p>
-          <p>
-          진해 도서관, OK 동물 병원 맞은편 ‘상일리베가구’ 앞<br/>
-          경남 창원 진해시 진해구 충장로 148-1<br/>
-          차량 출발 시간 : 2024년 4월 6일 오전 8시 출발<br/>
-          </p> */}
-          {/* <p>
-          버스 탑승 지역의 교통이 혼잡하여,<br/>
-          버스가 오래 머무를 수 없습니다.<br/>
-          출발 시간 전에 도착하셔서 탑승해 주시길 바랍니다. <br/>
-          감사합니다.
-          </p>
-          <br/> */}
         </p>
       </Map>
       <div>마음 전해주실 곳 </div>
@@ -200,7 +185,7 @@ const Img2 = styled.img`
   height: auto;
   width: 350px;
   height: 70%;
-  margin-top: 130px;
+  margin-top: 100px;
   margin-bottom: 110px;
 `
 
@@ -298,7 +283,7 @@ margin-bottom: 50px;
 }
   .slick-slide img {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   height: 620px;
   width: 100%;
   box-sizing: border-box;
@@ -327,7 +312,7 @@ margin-bottom: 50px;
     text-align: center;
     padding: 0;
     list-style: none;
-    bottom: -30px;
+    bottom: -15px;
     li {
       float: none;
       display: inline-block;
