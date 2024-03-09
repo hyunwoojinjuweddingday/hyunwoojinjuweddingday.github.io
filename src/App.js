@@ -18,8 +18,9 @@ import img005 from './Img/p05.webp';
 import img006 from './Img/p06.webp';
 import img008 from './Img/p08.webp';
 import img009 from './Img/img009_11zon.png';
-import img0010 from './Img/img0010_11zon.png';
+import img0010 from './Img/img10.webp';
 import main from './Img/main_11zon.png';
+import img09 from './Img/p09.webp';
 
 
 
@@ -89,6 +90,7 @@ const settings = {
           <p>대구광역시 수성구 동대구로 194-7 <b>아현정</b> <br/>(황금동 660)</p>
           <p>주차안내</p>
           <p>어린이세상 앞 공영주차장 (2시간 무료주차) <br/>대구 수성구 황금동 635-6</p>
+
         </p>
       </Map>
       <div>마음 전해주실 곳 </div>
@@ -120,7 +122,7 @@ const settings = {
         <img src={img001} loading="lazy"/>
         </div>
         <div>
-        <img src={img009} loading="lazy"/>
+        <img src={img09} loading="lazy"/>
         </div>
         <div>
         <img src={img0010} loading="lazy"/>
